@@ -1,0 +1,29 @@
+{
+  "baseUrl": "https://dev.mksp.co",
+  "projectId": "makespace-automation",
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 120000,
+  "video": false,
+  "ignoreTestFiles": [
+    "*.js",
+    "*.md"
+  ],
+  "testFiles": "features/*.feature",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  },
+  "screenshotsFolder": "cypress/reports/mochareports/assets",
+  "chromeWebSecurity": false,
+  "viewportWidth": 1400,
+  "viewportHeight": 1600,
+  "restartBrowserBetweenSpecFiles": true,
+  "numTestsKeptInMemory": 0
+}
